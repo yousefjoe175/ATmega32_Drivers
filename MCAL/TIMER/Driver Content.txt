@@ -1,0 +1,12 @@
+Normal Delay
+set interval (perfroming a specific function after a period of time one by making it an ISR using callbacks)
+set interval periodic (just like the previous but periodically)
+
+PWM
+ICU
+WDT
+
+
+/* Initialize the timer */
+1. Set the clock source of the timer
+2. 
