@@ -1,19 +1,27 @@
 /*********************************************************************/
 /*********************************************************************/
 /******** Author:    Yousef Khaled ***********************************/
-/******** Component: WDT           ***********************************/
-/******** Layer:     MCAL          ***********************************/
+/******** Component: EEPROM        ***********************************/
+/******** Layer:     HAL           ***********************************/
 /*********************************************************************/
 /*********************************************************************/
 
-#ifndef WDT_REGISTER_H
-#define WDT_REGISTER_H
+#ifndef EEPROM_H_
+#define EEPROM_H_
 
-#define  WDTCR  *((volatile u8*) 0x41)
 
-#define WDTOE	4
-#define WDE		3
-#define WDP2	2
-#define WDP1	1
-#define WDP0	0
+void EEPROM_voidInit(void);
+
+void EEPROM_voidSendDataByte(u16 Copy_u16address, u8 Copy_u8data);
+
+u8   EEPROM_u8ReadDataByte(u16 Copy_u16address);
+ 
 #endif
+
+
+
+
+
+
+
+
